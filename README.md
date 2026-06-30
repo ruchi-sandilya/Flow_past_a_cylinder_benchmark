@@ -15,7 +15,7 @@ This repository contains a 2-D benchmark for simulating incompressible flow past
 The code solves a canonical flow-past-a-cylinder problem in a 2-D channel with a circular obstacle. The workflow consists of two main steps:
 
 1. **Mesh generation** using Gmsh for a rectangular channel with a circular cylinder.
-2. **Flow simulation** using FEniCS/DOLFIN to solve the time-dependent Navier--Stokes equations and save velocity-magnitude snapshots.
+2. **Flow simulation** using FEniCS/DOLFIN to solve the time-dependent Navier-Stokes equations and save velocity-magnitude snapshots.
 
 The benchmark supports parameter sweeps over:
 
@@ -160,17 +160,6 @@ Velocity-magnitude frames are saved with names of the form:
 Images/velmag_r_<radius>_Re_<Reynolds_number>_step_<step>.png
 ```
 
-## Creating GIFs from saved frames
-
-After running a simulation, the saved frames in `Images/` can be converted to a GIF using `ffmpeg` or Python. For example:
-
-```bash
-ffmpeg -framerate 20 \
-  -pattern_type glob \
-  -i 'Images/velmag_r_0.05_Re_120_step_*.png' \
-  gif_images/Re_120_r_0.05.gif
-```
-
 ## Notes
 
 - Run mesh generation before running the flow simulation for a given radius.
@@ -183,14 +172,10 @@ ffmpeg -framerate 20 \
 If you use this benchmark or the generated data in your work, please cite:
 
 ```bibtex
-@article{sandilya2025contrastive,
+@article{sandilya2026contrastive,
   title={Contrastive Diffusion Alignment: Learning Structured Latents for Controllable Generation},
   author={Sandilya, R. and Perez, S. and Lynch, C. and Victoria, L. and Zebley, B. and Buchanan, D. M. and Bhati, M. T. and Williams, N. and Spellman, T. and Gunning, F. M. and Liston, C. and Grosenick, L.},
-  journal={arXiv preprint arXiv:2510.14190},
-  year={2025}
+  journal={Forty-Third International Conference on Machine Learning (ICML). arXiv:2510.14190},
+  year={2026}
 }
 ```
-
-## License
-
-No license file is currently included in this repository. Please add a license file if you want to specify reuse and redistribution terms.
