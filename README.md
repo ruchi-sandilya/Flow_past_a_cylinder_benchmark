@@ -172,7 +172,7 @@ Images/velmag_r_<radius>_Re_<Reynolds_number>_step_<step>.png
 If you use this benchmark or the generated data in your work, please cite:
 
 ```bibtex
-@article{sandilya2026contrastive,
+@article{sandilya2026conda,
   title={Contrastive Diffusion Alignment: Learning Structured Latents for Controllable Generation},
   author={Sandilya, R. and Perez, S. and Lynch, C. and Victoria, L. and Zebley, B. and Buchanan, D. M. and Bhati, M. T. and Williams, N. and Spellman, T. and Gunning, F. M. and Liston, C. and Grosenick, L.},
   journal={Forty-Third International Conference on Machine Learning (ICML). arXiv:2510.14190},
